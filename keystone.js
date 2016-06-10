@@ -85,6 +85,10 @@ keystone.set('email rules', [{
 
 keystone.set('email tests', require('./routes/emails'));
 
+keystone.set('cloudinary config', 'cloudinary://157143667451971:G3_XgjBagD3Ge2UQbcKHHsBW9L4@dvrpydhgq' );
+
+
+
 // Configure the navigation bar in Keystone's Admin UI
 
 keystone.set('nav', {
