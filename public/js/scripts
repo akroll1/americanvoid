@@ -1,4 +1,29 @@
-$http.get(url).success(function(twitterData){
-		$scope.tweets = twitterData.statuses;
-		
-		console.log(twitterData);
+$(document).ready(function(){
+	// $http.get(url).success(function(twitterData){
+	// 		$scope.tweets = twitterData.statuses;
+			
+	// 		console.log(twitterData);
+
+	
+
+	var h3s = $('.moreh3s').text();
+	// 	'h3').text();
+	// console.log(h3s);
+	// 	for(i=0;i<h3s.length;i++){
+	// 		console.log('line 12 ' + h3s.length);
+	// 		// shortenTitle(title[i]);
+	// 	}
+
+	// var title = $(titles).text();
+	function shortenTitle(title){
+		var longestTitleLength = 6;
+				if(title.length > longestTitleLength){
+					title = title.slice(0,longestTitleLength - 3);
+					title +="..."
+				}
+				return title;
+	}
+
+
+
+});//ends doc ready statement.		
