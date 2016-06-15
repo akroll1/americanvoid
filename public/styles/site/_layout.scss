@@ -7,7 +7,6 @@ body {
 .navbar {
 	background-color: #962023;
 	color: #FFF;
-	// box-shadow; 10px 10px 5px #888888;
 }
 .navbar li a {
 	color: #FFF;
@@ -16,9 +15,8 @@ body {
 .navbar li a:hover {
 	color: #962023;
 	background-color: white;
-	border-radius: 5px;
+	border-radius: 3px;
 	font-weight: bold;	
-	border-radius: 5px;
 	font-size: 20px;
 }
 .navbar-brand {
