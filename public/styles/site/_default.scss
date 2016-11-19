@@ -1,5 +1,6 @@
 body {
 	background-color: #F8F8F8;
+  font-family: bazooka;
 }
 #header {
 	margin-top: 30px;
@@ -10,17 +11,17 @@ body {
 }
 .navbar li a {
 	color: #FFF;
-	font-size: 18px;
+	font-size: 22px;
 }
 .navbar li a:hover {
 	color: #962023;
 	background-color: white;
 	border-radius: 3px;
-	font-weight: bold;	
 	font-size: 20px;
 }
 .navbar-brand {
-	font-size: 22px;
+	font-size: 24px;
+  font-family: boulder;
 	color: black;
 	background-color: white;
 	font-weight: bold;
@@ -31,36 +32,6 @@ body {
 }
 .sitewrapper {
 	height: 800px;
-}
-.opening h1 {
-	color: #750406;
-	font-size: 60px;
-	font-weight: bold;
-}
-.opening span {
-	color: darkred;
-}
-.leadimage img {
-	width: 100%;
-}
-.posts {
-	margin-top: 30px;
-}
-.posts a:hover {
-	color: red;
-	text-decoration: none;
-}
-.posts p {
-	text-align: center;
-	color: black;
-}
-.posts h3{
-	font-weight: bold;
-	text-align: center;
-	color: #750406;
-}
-.posts h3:hover {
-	color: #B11010;
 }
 #footer {
 	margin-top: 30px;
@@ -77,4 +48,3 @@ body {
 	text-align: center;
 	color: #696969;
 }
-
