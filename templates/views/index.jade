@@ -1,6 +1,20 @@
 extends ../layouts/default
 
+mixin article(article)
+	.col-lg-4.blurbs
+		a(href='blog/post/#{article.slug}')
+			h3=article.title
+			h5!=article.content.brief
+
 block content
+	- function shortenTitle(brief){
+	-		var longestBriefLength = 100;
+	-		if(brief.length > longestBriefLength){title = brief.slice(0,longestBriefLength - 3);
+	-			title +="..."
+	-		}
+	-		return title;
+	-	}
+
 	.container: .col-lg-12.sitewrapper
 		.col-lg-9
 			.opening
@@ -17,15 +31,5 @@ block content
 			h4 Tweets go here
 
 		.col-lg-12.posts
-			.col-lg-4
-				a(href='/blog/post/say-what-you-will-trump-is-speaking-to-middle-america')
-					h3 Say What You Will, Trump is Speaking to Middle America
-					p Say what you will about The Donald, Trump is speaking to middle America unlike any other Republican. And that is bad news...
-			.col-lg-4
-				a(href='blog/post/what-are-us-little-americans-to-do')
-					h3 What Are Us Little Americans to Do?
-					p Stuck between conservative hypocrisy and liberal vapidity, what's an honest man to do?
-			.col-lg-4
-				a(href='/blog/post/is-hillary-clinton-a-tragic-figure')
-					h3 Is Hillary Clinton a Tragic Figure?
-					p I do believe Hillary wins today, but like in 2000, you never know.
+			each article in data.articles
+				+article(article)
